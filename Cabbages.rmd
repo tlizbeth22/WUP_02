@@ -44,9 +44,17 @@ basicCN <- ggplot(veggy,aes(x=Cult,y=VitC))
 basicCN + geom_boxplot()
 ```
 
+
+The data shows c52 gets more vitamin C than c39.   
+
 ### Numerical Descriptive Results
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
+
+```{r}
+favstats(VitC~Cult,data=veggy)
+```
+The average of c52 shows 64.4. The average of c39 is 51.5.
 
 ## Inferential Results
 
